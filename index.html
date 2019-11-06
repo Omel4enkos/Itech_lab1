@@ -2,7 +2,23 @@
 <html>
     <head>
     <title>Лабораторная №1</title>
-    <meta charset="utf-8">        
+    <meta charset="utf-8">     
+        <style>
+            .MyClass {
+                list-style-type: none;
+            }
+            .MyClass li:nth-child(1)::before { content: 'a)';}
+            .MyClass li:nth-child(2)::before { content: 'б)';}
+            .MyClass li:nth-child(3)::before { content: 'в)';}
+            .MyClass li:nth-child(4)::before { content: 'г)';}
+            
+            .MyClass2 {
+                list-style-type: none;
+            }
+            .MyClass2 li:nth-child(1)::before { content: 'a)';}
+            .MyClass2 li:nth-child(2)::before { content: 'б)';}
+            .MyClass2 li:nth-child(3)::before { content: 'в)';}
+        </style>
     </head>
     <body>
         <p style="text-align: center;font-size: 18px;font-family: Times New Roman">Задание №1 <br>Оформленный текст</p>
@@ -12,14 +28,16 @@
         <ol>
         <li>
             Вопрос №1:
-            <ol>
+            <ol class="MyClass">
                 <li>Ответ1</li>
-                <li>Ответ2</li>               
+                <li>Ответ2</li>  
+                <li>Ответ3</li>
+                <li>Ответ4</li>
             </ol>
         </li>
             <li>
                 Вопрос №2:
-                <ol>
+                <ol class="MyClass2">
                     <li>Ответ1</li>
                     <li>Ответ2</li>
                     <li>Ответ3</li>
@@ -68,7 +86,7 @@
             <input type="submit" name="enter" value="Вход" />
         </form>
         
-       <p style="text-align: center;font-size: 18px;font-family: Times New Roman">Задание №5 <br>ссылки и изображения</p>
+       <p style="text-align: center;font-size: 18px;font-family: Times New Roman">Задание №5 <br>Ссылки и изображения</p>
         
         <p style="text-align: center"><a href="https://nure.ua"><img src="images.jpg" alt="Изображение" width="250" 
    height="150"></a></p>
